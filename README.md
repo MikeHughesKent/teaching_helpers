@@ -20,7 +20,7 @@ Runs through a latex file and removes the `\sol{` tag and replaces it with `\tex
 Used because pandoc cannot handle the macro used in latex to do this. 
 
 If pandoc is run on the latex without running this script then everything 
-inside the \sol{} tag is ignoed. So run pandoc on original file to produce
+inside the `\sol{` tag is ignoed. So run pandoc on original file to produce
 question sheet and run pandoc on output of this script to produce version
 with solutions.
 
