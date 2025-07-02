@@ -5,7 +5,11 @@ Utilities to help with teaching preparation for physics at University of Kent.
 Command line tool for creating a SCORM package from html files. If uploaded to Moodle, these files will then be accessible from within
 a single SCORM item. Packages all html files in current folder and all files in `<images path>`.
 
-Usage: make_scorm <title> <images path>
+Usage: 
+```
+python make_scorm.py title images_path
+```
+Example:
 ```
 python make_scorm.py "Lecture Notes" "images"
 ```
@@ -20,7 +24,11 @@ inside the \sol{} tag is ignoed. So run pandoc on original file to produce
 question sheet and run pandoc on output of this script to produce version
 with solutions.
 
-Usage: python replace_sol.py <input file> <output file>
+Usage: 
+```
+python replace_sol.py input_file output_file
+```
+Example:
 ```
 python replace_sol.py input.tex output.tex
 ```
